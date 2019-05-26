@@ -36,13 +36,17 @@ public class MainApplication {
             CoreCalc core = new CoreCalc();
             String s = Console.getStringInput("Enter a string").toLowerCase();
             Double d = Console.getDoubleInput("Enter a double.");
-            Double d2 = Console.getDoubleInput("Enter another double.");
-            Console.println("The user input %s as a d", d2);
-
-            if (s.equalsIgnoreCase("+") || s.equalsIgnoreCase("-") || s.equalsIgnoreCase("*") || s.equalsIgnoreCase("\n")) {
-                System.out.println(core.basicCalcs(d, d2, s));
+            Console.println("The user input %s as a double", d);
+            if (s.equalsIgnoreCase("square root") || s.equalsIgnoreCase("square") || s.equalsIgnoreCase("invert")) {
+                System.out.println(core.advancedCalcs2(s, d));
             }
-            if (s.equalsIgnoreCase("square root") || s.equalsIgnoreCase("square") || s.equalsIgnoreCase("exponentiation") || s.equalsIgnoreCase("invert")) {
+
+            Double d2 = Console.getDoubleInput("Enter another double.");
+            if (s.equalsIgnoreCase("+") || s.equalsIgnoreCase("-") || s.equalsIgnoreCase("*") || s.equalsIgnoreCase("\n")) {
+                System.out.println(core.basicCalcs(s, d, d2));
+            }
+
+            if (s.equalsIgnoreCase("exponentiation")){
                 System.out.println(core.advancedCalcs(s, d, d2));
             }
         }
