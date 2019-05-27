@@ -1,4 +1,5 @@
 package com.zipcodewilmington.scientificcalculator;
+import java.util.Scanner;
 import java.lang.Math;
 import java.math.BigInteger;
 
@@ -73,7 +74,12 @@ public class ScientificCalc {
             case "circlearea":
                 returnValue=Math.PI*d*d;
                 break;
-           case "m+":
+            case "mr":
+                returnValue = memory;
+                break;
+            case "mc":
+                this.memory = 0.0;
+            case "m+":
                 returnValue = memory + d;
                 break;
             default:
@@ -84,16 +90,6 @@ public class ScientificCalc {
         return returnValue;
     }
 
-    public Double MathOperation(String s) {
-        switch (s) {
-            case "mrc":
-                break;
-            case "mc":
-                this.memory = 0.0;
-                break;
-        }
-        return memory;
-    }
     public BigInteger factorial(Integer i) {
 
         BigInteger f = new BigInteger("1");
