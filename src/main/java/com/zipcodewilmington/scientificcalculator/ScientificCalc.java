@@ -1,5 +1,4 @@
 package com.zipcodewilmington.scientificcalculator;
-import java.util.Scanner;
 import java.lang.Math;
 import java.math.BigInteger;
 
@@ -89,6 +88,10 @@ public class ScientificCalc {
         }
         memory = f.doubleValue();
         return f;
+    }
+
+
+    public String MathOperation(String binary, double v) {
     }
 }
 
