@@ -27,6 +27,7 @@ public class MainApplication {
             }
         while (s.equalsIgnoreCase("C")) {
             CoreCalc core = new CoreCalc();
+
             s = Console.getStringInput("Enter an operation").toLowerCase();
              while(!(s.equalsIgnoreCase("s"))&&!(s.equalsIgnoreCase("exit"))) {
                    
