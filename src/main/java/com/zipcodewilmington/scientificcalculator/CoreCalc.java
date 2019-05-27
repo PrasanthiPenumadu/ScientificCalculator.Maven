@@ -1,6 +1,7 @@
 package com.zipcodewilmington.scientificcalculator;
 
 
+
 public class CoreCalc {
     public double basicCalcs (double d, double d2, String s){
 
@@ -13,6 +14,12 @@ public class CoreCalc {
             case "*": result = d * d2;
                 break;
             case "/": result = d / d2;
+                if(d2 == 0) {
+                    System.out.println("Err");
+                }
+                break;
+            default:
+                System.out.println("Please enter a valid input");
                 break;
         }
         return result;
@@ -24,7 +31,9 @@ public class CoreCalc {
             case "exponentiation":
                 result = Math.pow(d, d2);
                 break;
-
+            default:
+                System.out.println("Please enter a valid input");
+                break;
         }
         return result;
     }
@@ -40,6 +49,22 @@ public class CoreCalc {
             case "invert": result =  -d;
                 break;
             case "reciprocal": result = 1.0/d;
+                break;
+            default:
+                System.out.println("Please enter a valid input");
+                break;
+        }
+        return result;
+    }
+    public String bonusCalcs(String s){
+        String result = "";
+        switch (s) {
+            case "random": result = String.format("%.2f", Math.random() * 100);
+                break;
+            case "pi": result = String.format("%.2f", Math.PI);
+                break;
+            default:
+                System.out.println("Please enter a valid input");
         }
         return result;
     }
