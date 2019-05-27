@@ -74,11 +74,11 @@ public class ScientificCalc {
             case "circlearea":
                 returnValue=Math.PI*d*d;
                 break;
-            case "mr":
-                returnValue = memory;
-                break;
-            case "mc":
-                this.memory = 0.0;
+            //case "mr":
+                //returnValue = memory;
+                //break;
+            //case "mc":
+              //  this.memory = 0.0;
             case "m+":
                 returnValue = memory + d;
                 break;
@@ -89,7 +89,16 @@ public class ScientificCalc {
         memory = returnValue;
         return returnValue;
     }
-
+    public Double MathOperation(String s) {
+        switch (s) {
+            case "mrc":
+                break;
+            case "mc":
+                this.memory = 0.0;
+                break;
+        }
+        return memory;
+    }
     public BigInteger factorial(Integer i) {
 
         BigInteger f = new BigInteger("1");

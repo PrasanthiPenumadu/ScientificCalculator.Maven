@@ -27,7 +27,8 @@ public class MainApplication {
             }
         while (s.equalsIgnoreCase("C")) {
             CoreCalc core = new CoreCalc();
-            String s = Console.getStringInput("Enter an operation").toLowerCase();
+
+            s = Console.getStringInput("Enter an operation").toLowerCase();
              while(!(s.equalsIgnoreCase("s"))&&!(s.equalsIgnoreCase("exit"))) {
                    
                 if (s.equalsIgnoreCase("random") || s.equalsIgnoreCase("pi")){
@@ -49,7 +50,7 @@ public class MainApplication {
                 if (s.equalsIgnoreCase("+") || s.equalsIgnoreCase("-") || s.equalsIgnoreCase("*") || s.equalsIgnoreCase("/")) {
                     Double d = Console.getDoubleInput("Enter the first number");
                     Double d2 = Console.getDoubleInput("Enter the second number");
-                    System.out.println("The computed value of the operation is " + core.basicCalcs(d, d2, s));
+                    System.out.println("The computed value of the operation is " + core.basicCalcs(s, d, d2));
                 }
 
 
