@@ -16,6 +16,14 @@ public class MainApplication {
                         Double d = Console.getDoubleInput("Enter a double value as the operand");
                         Console.println("The user input %s as the required operation ", s);
                         Console.println("The user input %s as a input operand ", d);
+                         if (s.equalsIgnoreCase("tan") || s.equalsIgnoreCase("sin") || s.equalsIgnoreCase("cos") || s.equalsIgnoreCase("asin") || s.equalsIgnoreCase("atan") || s.equalsIgnoreCase("acos")) {
+                            String trig = Console.getStringInput("Enter Degrees or Radians");
+                            if (trig.equalsIgnoreCase("radians")) {
+                                System.out.println("The " + s + " of " + d + " is " + scientific.MathOperation(s, d));
+                            } else if (trig.equalsIgnoreCase("degrees")) {
+                                System.out.println("The " + s + " of " + d + " is " + scientific.MathDegrees(s, d));
+                            }
+                        }
                         System.out.println("The " + s + " of " + d + " is " + scientific.MathOperation(s, d));
                     }
                     if (s.equalsIgnoreCase("mrc"))
