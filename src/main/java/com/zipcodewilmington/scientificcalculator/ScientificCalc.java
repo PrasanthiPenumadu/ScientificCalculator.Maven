@@ -92,6 +92,7 @@ public class ScientificCalc {
 
 
     public String MathOperation(String binary, double v) {
+        return null;
     }
 }
 

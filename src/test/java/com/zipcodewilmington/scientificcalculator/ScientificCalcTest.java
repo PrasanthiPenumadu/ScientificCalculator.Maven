@@ -51,6 +51,8 @@ public class ScientificCalcTest {
         assertEquals("10000",calc.MathOperation("inverse log",4));
         assertEquals("6",calc.MathOperation("factorial",3));
         assertEquals("3628800",calc.MathOperation("factorial",10));
+        assertEquals("10",calc.MathOperation("mr", 10));
+        assertEquals("10",calc.MathOperation("mc",0.0));
 
 
     }
