@@ -10,7 +10,7 @@ public class ScientificCalc {
     Double memory = 0.0;
 
 
-    public Double MathOperation(String s, Double d) {
+    public Double mathOperation(String s, Double d) {
 
         Double returnValue = 0.0;
         switch (s) {
@@ -81,7 +81,7 @@ public class ScientificCalc {
         return returnValue;
     }
 
-    public Double MathOperation(String s) {
+    public Double mathOperation(String s) {
         switch (s) {
             case "mrc":
                 break;
@@ -103,7 +103,7 @@ public class ScientificCalc {
         return f;
     }
 
-    public Double MathDegrees(String s, Double d) {
+    public Double mathDegrees(String s, Double d) {
         Double returnValue = 0.0;
         switch (s) {
             case "sin":

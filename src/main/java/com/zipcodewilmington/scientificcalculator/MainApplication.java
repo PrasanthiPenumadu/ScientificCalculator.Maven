@@ -21,18 +21,18 @@ public class MainApplication {
                         if (s.equalsIgnoreCase("tan") || s.equalsIgnoreCase("sin") || s.equalsIgnoreCase("cos") || s.equalsIgnoreCase("asin") || s.equalsIgnoreCase("atan") || s.equalsIgnoreCase("acos")) {
                             String trig = Console.getStringInput("Enter Degrees or Radians");
                             if (trig.equalsIgnoreCase("radians"))
-                                System.out.println("The " + s + " of " + d + " is " + scientific.MathOperation(s, d));
+                                System.out.println("The " + s + " of " + d + " is " + scientific.mathOperation(s, d));
                             if (trig.equalsIgnoreCase("degrees"))
-                                System.out.println("The " + s + " of " + d + " is " + scientific.MathDegrees(s, d));
+                                System.out.println("The " + s + " of " + d + " is " + scientific.mathDegrees(s, d));
                         } else if (s.equalsIgnoreCase("decimal")) {
-                            System.out.println("The decimal representation of " + d + " is " + scientific.MathOperation(s, d));
+                            System.out.println("The decimal representation of " + d + " is " + scientific.mathOperation(s, d));
                         } else
-                            System.out.println("The " + s + " of " + d + " is " + scientific.MathOperation(s, d));
+                            System.out.println("The " + s + " of " + d + " is " + scientific.mathOperation(s, d));
                     }
                     if (s.equalsIgnoreCase("mrc"))
-                        System.out.println("The value stored in calculator is " + scientific.MathOperation(s));
+                        System.out.println("The value stored in calculator is " + scientific.mathOperation(s));
                     if (s.equalsIgnoreCase("mc"))
-                        System.out.println("The value stored in calculator is set to " + scientific.MathOperation(s));
+                        System.out.println("The value stored in calculator is set to " + scientific.mathOperation(s));
                     s = Console.getStringInput("Enter another mathematical operation or 'Exit' to Quit or 'C' to switch to Core Calculator!").toLowerCase();
                 }
             }
