@@ -88,6 +88,9 @@ public class ScientificCalc {
             case "mc":
                 this.memory = 0.0;
                 break;
+                default:
+                    System.out.println("Please enter a valid input");
+                    break;
         }
         return memory;
     }
@@ -123,6 +126,9 @@ public class ScientificCalc {
                 break;
             case "inverse tan":
                 returnValue = Math.atan(Math.toRadians(d));
+                break;
+            default:
+                System.out.println("Please enter a valid input");
                 break;
 
         }
