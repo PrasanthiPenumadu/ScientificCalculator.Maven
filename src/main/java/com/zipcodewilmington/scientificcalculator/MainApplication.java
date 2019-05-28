@@ -1,5 +1,4 @@
 package com.zipcodewilmington.scientificcalculator;
-
 import java.text.DecimalFormat;
 public class MainApplication {
     public static void main(String[] args) {
