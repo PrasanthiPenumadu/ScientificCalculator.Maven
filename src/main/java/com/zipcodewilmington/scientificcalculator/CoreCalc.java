@@ -1,20 +1,23 @@
 package com.zipcodewilmington.scientificcalculator;
 
 
-
 public class CoreCalc {
-    public double basicCalcs (String s, double d, double d2){
+    public double basicCalcs(String s, double d, double d2) {
 
-        Double result= 0.0;
+        Double result = 0.0;
         switch (s) {
-            case "+": result = d + d2;
+            case "+":
+                result = d + d2;
                 break;
-            case "-": result = d - d2;
+            case "-":
+                result = d - d2;
                 break;
-            case "*": result = d * d2;
+            case "*":
+                result = d * d2;
                 break;
-            case "/": result = d / d2;
-                if(d2 == 0) {
+            case "/":
+                result = d / d2;
+                if (d2 == 0) {
                     System.out.println("Err");
                 }
                 break;
@@ -24,7 +27,8 @@ public class CoreCalc {
         }
         return result;
     }
-    public double advancedCalcs (String s,Double d, Double d2) {
+
+    public double advancedCalcs(String s, Double d, Double d2) {
 
         Double result = 0.0;
         switch (s) {
@@ -38,17 +42,21 @@ public class CoreCalc {
         return result;
     }
 
-    public double advancedCalcs2 (String s,Double d){
+    public double advancedCalcs2(String s, Double d) {
 
         Double result = 0.0;
         switch (s) {
-            case "square root": result = Math.sqrt(d);
+            case "square root":
+                result = Math.sqrt(d);
                 break;
-            case "square": result = Math.pow(d, 2);
+            case "square":
+                result = Math.pow(d, 2);
                 break;
-            case "invert": result =  -d;
+            case "invert":
+                result = -d;
                 break;
-            case "reciprocal": result = 1.0/d;
+            case "reciprocal":
+                result = 1.0 / d;
                 break;
             default:
                 System.out.println("Please enter a valid input");
@@ -56,12 +64,15 @@ public class CoreCalc {
         }
         return result;
     }
-    public String bonusCalcs(String s){
+
+    public String bonusCalcs(String s) {
         String result = "";
         switch (s) {
-            case "random": result = String.format("%.2f", Math.random() * 100);
+            case "random":
+                result = String.format("%.2f", Math.random() * 100);
                 break;
-            case "pi": result = String.format("%.2f", Math.PI);
+            case "pi":
+                result = String.format("%.2f", Math.PI);
                 break;
             default:
                 System.out.println("Please enter a valid input");

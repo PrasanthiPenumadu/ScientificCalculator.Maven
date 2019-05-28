@@ -2,9 +2,6 @@ package com.zipcodewilmington.scientificcalculator;
 
 import java.text.DecimalFormat;
 
-/**
- * Created by leon on 2/9/18.
- */
 public class MainApplication {
     public static void main(String[] args) {
         Console.println("Welcome to our calculator!");
@@ -27,8 +24,7 @@ public class MainApplication {
                                 System.out.println("The " + s + " of " + d + " is " + scientific.MathOperation(s, d));
                             if (trig.equalsIgnoreCase("degrees"))
                                 System.out.println("The " + s + " of " + d + " is " + scientific.MathDegrees(s, d));
-                        }
-                        else if (s.equalsIgnoreCase("decimal")) {
+                        } else if (s.equalsIgnoreCase("decimal")) {
                             System.out.println("The decimal representation of " + d + " is " + scientific.MathOperation(s, d));
                         } else
                             System.out.println("The " + s + " of " + d + " is " + scientific.MathOperation(s, d));

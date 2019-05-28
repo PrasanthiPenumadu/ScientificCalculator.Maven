@@ -1,4 +1,5 @@
 package com.zipcodewilmington.scientificcalculator;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
 import java.lang.Math;
@@ -25,27 +26,27 @@ public class ScientificCalc {
                 break;
             case "decimal":
                 DecimalFormat df = new DecimalFormat("####.##");
-                returnValue =Double.valueOf(df.format(d));
+                returnValue = Double.valueOf(df.format(d));
                 break;
             case "sin":
                 returnValue = Math.sin(d);
                 break;
             case "cos":
-                returnValue =Math.cos(d);
+                returnValue = Math.cos(d);
                 break;
             case "tan":
-                returnValue=Math.tan(d);
+                returnValue = Math.tan(d);
                 break;
             case "inverse sine":
                 returnValue = Math.asin(d);
                 break;
             case "inverse cosine":
-                returnValue=Math.acos(d);
+                returnValue = Math.acos(d);
                 break;
             case "inverse tan":
                 returnValue = Math.atan(d);
                 break;
-          case "log":
+            case "log":
                 returnValue = Math.log(d);
                 break;
             case "log10":
@@ -58,17 +59,17 @@ public class ScientificCalc {
                 returnValue = Math.pow(10, d);
                 break;
             case "factorial":
-                returnValue= (factorial(Integer.valueOf((int)d.doubleValue()))).doubleValue();
+                returnValue = (factorial(Integer.valueOf((int) d.doubleValue()))).doubleValue();
                 break;
             case "round":
-                returnValue=Double.valueOf(Math.round(d));
+                returnValue = Double.valueOf(Math.round(d));
                 break;
             case "cube":
-                returnValue=d*d*d;
+                returnValue = d * d * d;
                 break;
             case "circlearea":
-                returnValue=Math.PI*d*d;
-               break;
+                returnValue = Math.PI * d * d;
+                break;
             case "m+":
                 returnValue = memory + d;
                 break;
@@ -79,6 +80,7 @@ public class ScientificCalc {
         memory = returnValue;
         return returnValue;
     }
+
     public Double MathOperation(String s) {
         switch (s) {
             case "mrc":
@@ -89,6 +91,7 @@ public class ScientificCalc {
         }
         return memory;
     }
+
     public BigInteger factorial(Integer i) {
 
         BigInteger f = new BigInteger("1");
@@ -100,30 +103,31 @@ public class ScientificCalc {
         return f;
     }
 
-public Double MathDegrees(String s,Double d){
+    public Double MathDegrees(String s, Double d) {
         Double returnValue = 0.0;
-switch (s) {
-    case "sin":
-        returnValue = Math.sin(Math.toRadians(d));
-        break;
-    case "cos":
-        returnValue =Math.cos(Math.toRadians(d));
-        break;
-    case "tan":
-        returnValue = Math.tan(Math.toRadians(d));
-        break;
-    case "inverse sine":
-        returnValue = Math.asin(Math.toRadians(d)) ;
-        break;
-    case "inverse cosine":
-        returnValue = Math.acos(Math.toRadians(d));
-        break;
-    case "inverse tan":
-        returnValue = Math.atan(Math.toRadians(d));
-        break;
+        switch (s) {
+            case "sin":
+                returnValue = Math.sin(Math.toRadians(d));
+                break;
+            case "cos":
+                returnValue = Math.cos(Math.toRadians(d));
+                break;
+            case "tan":
+                returnValue = Math.tan(Math.toRadians(d));
+                break;
+            case "inverse sine":
+                returnValue = Math.asin(Math.toRadians(d));
+                break;
+            case "inverse cosine":
+                returnValue = Math.acos(Math.toRadians(d));
+                break;
+            case "inverse tan":
+                returnValue = Math.atan(Math.toRadians(d));
+                break;
 
-}memory=returnValue;
-return returnValue;
+        }
+        memory = returnValue;
+        return returnValue;
     }
 }
 
