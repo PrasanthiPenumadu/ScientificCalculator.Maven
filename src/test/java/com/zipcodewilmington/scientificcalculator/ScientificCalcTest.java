@@ -24,7 +24,7 @@ public class ScientificCalcTest {
         public void mathOperation() {
             ScientificCalc calc = new ScientificCalc();
             assertEquals(1010.0, calc.MathOperation("binary", 10.0),0);
-            assertEquals(10100.0, calc.MathOperation("binary", 20.0),0);
+            assertEquals(20.20, calc.MathOperation("decimal", 20.1999),0);
             assertEquals(620, calc.MathOperation("octal", 400.00),0);
             assertEquals(15530, calc.MathOperation("octal", 7000.00),0);
             assertEquals(3e8, calc.MathOperation("hexadecimal", 1000.00),0);
@@ -48,6 +48,11 @@ public class ScientificCalcTest {
             assertEquals(6, calc.MathOperation("factorial", 3.00),0);
             assertEquals(3628800, calc.MathOperation("factorial", 10.00),0);
             assertEquals(0.0, calc.MathOperation("mc", 0.0),0);
+            assertEquals(5,calc.MathOperation("round",5.05),0);
+            assertEquals(6,calc.MathOperation("round",5.95),0);
+            assertEquals(64,calc.MathOperation("cube",4.0),0);
+            assertEquals(125,calc.MathOperation("cube",5.0),0);
+            assertEquals(50.26548245743669,calc.MathOperation("circlearea",4.0),0);
         }
 
         @Test

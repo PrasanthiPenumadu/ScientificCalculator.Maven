@@ -45,7 +45,7 @@ public class CoreCalcTest {
     public void advancedCalcs2() {
         CoreCalc calc = new CoreCalc();
         assertEquals(12.0,calc.advancedCalcs2("square root",144.0),0);
-        assertEquals(144.0,calc.advancedCalcs2("sqaure",12.0),0);
+        assertEquals(144.0,calc.advancedCalcs2("square",12.0),0);
         assertEquals(-99.0,calc.advancedCalcs2("invert",99.0),0);
         assertEquals(1.0/10.0,calc.advancedCalcs2("reciprocal",10.0),0);
 

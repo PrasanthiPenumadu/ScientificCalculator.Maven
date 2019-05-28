@@ -1,4 +1,5 @@
 package com.zipcodewilmington.scientificcalculator;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 import java.lang.Math;
 import java.math.BigInteger;
@@ -23,7 +24,8 @@ public class ScientificCalc {
                 returnValue = Double.valueOf(Integer.toHexString(d.intValue()));
                 break;
             case "decimal":
-                returnValue = Double.valueOf(Integer.toBinaryString(d.intValue()));
+                DecimalFormat df = new DecimalFormat("####.##");
+                returnValue =Double.valueOf(df.format(d));
                 break;
             case "sin":
                 returnValue = Math.sin(d);
