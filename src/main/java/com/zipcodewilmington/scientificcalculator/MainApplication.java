@@ -16,8 +16,6 @@ public class MainApplication {
 
                     if (!(s.equalsIgnoreCase("mc") || s.equalsIgnoreCase("mrc"))) {
                         Double d = Console.getDoubleInput("Enter the number");
-                        Console.println("The user input %s as the required operation ", s);
-                        Console.println("The user input %s as a input operand ", d);
                         if (s.equalsIgnoreCase("tan") || s.equalsIgnoreCase("sin") || s.equalsIgnoreCase("cos") || s.equalsIgnoreCase("asin") || s.equalsIgnoreCase("atan") || s.equalsIgnoreCase("acos")) {
                             String trig = Console.getStringInput("Enter Degrees or Radians");
                             if (trig.equalsIgnoreCase("radians"))
